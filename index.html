@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Youtube DL CLI</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./CSS/mainCSS.css">
+  </head>
+  <body>
+    <div id="myMainButtons">
+      <div>
+        <h3>Select file.txt</h3>
+        <button id="myFile">Add File</button>
+      </div>
+      <div class="myOption">
+        <h3>Select Format?</h3>
+        <input type="radio" name="option" id="yes" value="Yes" >
+        <label for="yes">Yes</label>
+        <input type="radio" name="option" id="no" value="No" checked>
+        <label for="no">No</label>
+        <br/>
+        <input type="number" id="formatCode">
+      </div>
+      <div>
+        <h3>Click Start</h3>
+        <button id="startDownload">Start</button>
+      </div>
+    </div>
+    <div id="results">
+      <p id="statusDownloading">Offline</p> 
+      <p id="downloadingInfo"></p>    
+    </div>
+    <script src="./JSfiles/functionality.js"></script>
+  </body>
+</html>
